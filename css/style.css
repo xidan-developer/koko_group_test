@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1349px;
+  width: 100%;
+  margin: auto; }
+
+body {
+  font-family: Roboto, sans-serif; }
+
+.header {
+  margin-top: 44px; }
+  .header__title {
+    font-size: 48px;
+    font-weight: 400; }
+
+.news {
+  margin-top: 68px; }
+  .news_row {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; }
+    .news_row_item {
+      overflow: hidden;
+      width: 423px;
+      height: 591px;
+      box-shadow: 0px 4px 15px 0px #00A15C26;
+      border-radius: 20px; }
+      .news_row_item_bottom {
+        padding: 24px 35px 35px 35px;
+        display: flex;
+        flex-direction: column;
+        height: 318px; }
+        .news_row_item_bottom_row {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          width: 100%;
+          margin-top: auto; }
+          .news_row_item_bottom_row__author {
+            font-size: 16px;
+            color: #C4C4C4;
+            font-weight: 400; }
+          .news_row_item_bottom_row_block__img {
+            max-width: 30px;
+            width: 100%;
+            height: auto;
+            cursor: pointer; }
+        .news_row_item_bottom__title {
+          height: 29px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 24px;
+          font-weight: 500; }
+        .news_row_item_bottom__date {
+          font-size: 20px;
+          color: #C4C4C4;
+          margin-top: 2px; }
+        .news_row_item_bottom__description {
+          height: 110px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 18px;
+          font-weight: 400;
+          margin-top: 24px; }
+      .news_row_item_top__img {
+        width: 100%;
+        height: 269px;
+        object-fit: cover; }
+
+@media screen and (max-width: 1420px) {
+  .container {
+    max-width: 886px; } }
+@media screen and (max-width: 940px) {
+  .container {
+    max-width: 500px; }
+
+  .news_row_item {
+    width: 100%; } }
+@media screen and (max-width: 550px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px; }
+
+  .news {
+    margin-top: 40px; }
+    .news_row_item_bottom {
+      padding: 20px 15px 20px 15px; }
+      .news_row_item_bottom_row_block__img {
+        max-width: 25px; } }
+
+/*# sourceMappingURL=style.css.map */
